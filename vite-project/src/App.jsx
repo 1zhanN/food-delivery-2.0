@@ -23,7 +23,6 @@ const App = () => {
         />
         <Route path="/cart" element={<Cart productCount={productCount} />} />
       </Routes>
-      App
     </div>
   );
 };
