@@ -4,9 +4,7 @@ import { assets, food_list } from "../../assets/assets";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./Home.css"; // Import custom CSS file
 
-const Home = () => {
-  const [productCount, setProductCount] = useState({});
-  console.log(productCount);
+const Home = ({ productCount, setProductCount }) => {
   // Function to add a product
   const addProduct = (productId) => {
     setProductCount((prevState) => ({
